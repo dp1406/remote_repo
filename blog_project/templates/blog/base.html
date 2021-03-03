@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/blog.css" %}">
+        <title>{% block title_block %}{% endblock %}</title>
+</head>
+<body>
+   <div class="content">
+       {% block content %}{% endblock %}
+   </div>
+   <div class="sidebar">
+       <h2>Durga's Block</h2>
+       <p>Here  you can see python updations...</p>
+   </div>
+
+
+</body>
+</html>
